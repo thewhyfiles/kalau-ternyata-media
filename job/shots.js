@@ -1,0 +1,32 @@
+// Kolumbus dan mitos bumi datar. l = indeks kalimat pembuka shot; 'wN' = kata ke-N dalam shot; ch=tokoh, pr=properti, tx=label, fx=efek
+const SHOTS = [];
+const Y = 1230, S = 470;
+KT.build([
+  { l: 0, bg: 'sea', z: [1, 1.1], ch: [{ c: 'kapten', x: 270, y: Y, s: S, m: 'puas', p: 'tunjuk', nopop: 1 }],
+    pr: [{ n: 'globe', x: 690, y: 560, s: 400, nopop: 1, float: 1 }, { n: 'qmark', x: 880, y: 250, s: 200, a: 'w4' }, { n: 'kapal', x: 800, y: 1010, s: 400, a: 0.2, back: 1 }] },
+  { l: 1, bg: 'sea', ch: [{ c: 'teman', x: 250, y: Y, s: S, m: 'takut', p: 'takut', a: 0.15 }, { c: 'sunny', x: 830, y: Y, s: S, m: 'takut', p: 'takut', a: 0.3, f: -1 }],
+    pr: [{ n: 'kapal', x: 540, y: 960, s: 560, back: 1, nopop: 1 }], tx: [{ t: 'bumi datar?', x: 540, y: 430, s: 110, a: 'w8', rot: -0.03 }] },
+  { l: 2, bg: 'sea', z: [1, 1.12], ch: [{ c: 'kapten', x: 540, y: Y, s: 520, m: 'senang', p: 'angkat', a: 0.1 }], pr: [{ n: 'bendera', x: 830, y: 560, s: 420, a: 'w3' }],
+    fx: [{ k: 'burst', at: 'w4', x: 300, y: 380, r: 200 }, { k: 'shake', at: 'w4' }] },
+  { l: 3, bg: 'flat', col: '#3fa7f5', ch: [{ c: 'kamu', x: 540, y: Y, s: 520, m: 'bingung', p: 'bingung', a: 0.1 }],
+    pr: [{ n: 'qmark', x: 820, y: 520, s: 300, a: 'w2' }, { n: 'qmark', x: 250, y: 640, s: 210, a: 'w4' }], fx: [{ k: 'flash', at: 0.02 }] },
+  { l: 4, bg: 'room', ch: [{ c: 'teman', x: 250, y: Y, s: S, m: 'puas', p: 'tunjuk', a: 0.1 }, { c: 'sunny', x: 840, y: Y, s: S, m: 'senang', p: 'diam', a: 0.25, f: -1 }],
+    pr: [{ n: 'globe', x: 545, y: 640, s: 380, a: 'w3', float: 1 }, { n: 'book', x: 110, y: 560, s: 150, a: 'w6', rot: -0.2 }] },
+  { l: 5, bg: 'day', ch: [{ c: 'sunny', x: 300, y: Y, s: S, m: 'mikir', p: 'garuk', m2: [['w5', 'nyengir']], a: 0.1 }],
+    pr: [{ n: 'bulb', x: 330, y: 520, s: 250, a: 'w5' }, { n: 'globe', x: 770, y: 700, s: 340, a: 0.15, float: 1 }], tx: [{ t: '240 SM', x: 540, y: 330, s: 120, a: 'w8', rot: 0.03 }] },
+  { l: 6, bg: 'flat', col: '#f08a5d', ch: [{ c: 'teman', x: 230, y: Y, s: S, m: 'bingung', p: 'bingung', a: 0.1 }, { c: 'kamu', x: 850, y: Y, s: S, m: 'nyengir', p: 'tunjuk', a: 0.2, f: -1 }],
+    pr: [{ n: 'globe', x: 540, y: 880, s: 330, a: 0.1, float: 1 }], tx: [{ t: 'bentuk', x: 540, y: 330, s: 100, a: 'w4', until: 'w7' }, { t: 'ukuran!', x: 540, y: 330, s: 140, a: 'w7', bg: '#ffc93c' }] },
+  { l: 7, bg: 'sea', ch: [{ c: 'kapten', x: 270, y: Y, s: S, m: 'puas', p: 'tunjukatas', a: 0.1 }], pr: [{ n: 'globe', x: 720, y: 760, s: 220, a: 0.2, float: 1 }],
+    tx: [{ t: '5.000 km', x: 640, y: 380, s: 120, a: 'w9', rot: -0.03 }] },
+  { l: 8, bg: 'flat', col: '#2a3f8f', ch: [{ c: 'kapten', x: 540, y: Y, s: S, m: 'kaget', p: 'takut', a: 0.1 }], tx: [{ t: '20.000 km', x: 540, y: 520, s: 170, a: 'w3', rot: 0.03 }],
+    fx: [{ k: 'burst', at: 'w3', x: 540, y: 520, r: 330 }, { k: 'shake', at: 'w3' }] },
+  { l: 9, bg: 'room', ch: [{ c: 'teman', x: 250, y: Y, s: S, m: 'mikir', p: 'garuk', m2: [['w9', 'puas']], a: 0.1 }, { c: 'sunny', x: 840, y: Y, s: S, m: 'mikir', m2: [['w9', 'puas']], f: -1, a: 0.25 }],
+    pr: [{ n: 'crown', x: 545, y: 560, s: 270, float: 1, a: 0.1 }], fx: [{ k: 'spark', at: 'w10', x: 545, y: 480, r: 90 }] },
+  { l: 10, bg: 'sea', z: [1, 1.1], ch: [{ c: 'kapten', x: 270, y: Y, s: S, m: 'senang', p: 'tunjuk', m2: [['w8', 'kaget']], p2: [['w8', 'angkat']], a: 0.1 }],
+    pr: [{ n: 'kapal', x: 520, y: 1010, s: 440, back: 1, a: 0.1 }, { n: 'pulau', x: 850, y: 1000, s: 360, a: 'w8', back: 1 }], fx: [{ k: 'burst', at: 'w8', x: 850, y: 700, r: 200 }] },
+  { l: 11, bg: 'room', ch: [{ c: 'sunny', x: 250, y: Y, s: S, m: 'mikir', p: 'tunjuk', a: 0.1 }], pr: [{ n: 'book', x: 640, y: 600, s: 420, float: 1, a: 0.1, wobble: 1 }],
+    tx: [{ t: 'Washington Irving', x: 540, y: 270, s: 90, a: 'w8', rot: -0.02 }] },
+  { l: 12, bg: 'flat', col: '#ffc93c', ch: [{ c: 'kamu', x: 540, y: Y, s: 500, m: 'puas', p: 'pinggang', a: 0.1 }],
+    tx: [{ t: 'yang kamu kira,\nbelum tentu begitu', x: 540, y: 520, s: 100, a: 0.15, card: false }], fx: [{ k: 'spark', at: 0.5, x: 280, y: 380, r: 80 }, { k: 'spark', at: 0.8, x: 820, y: 700, r: 60 }] },
+  { l: 13, bg: 'day', sun: [300, 300, 80], ch: [{ c: 'kamu', x: 540, y: Y, s: 520, m: 'mikir', p: 'garuk', a: 0.1 }], pr: [{ n: 'qmark', x: 810, y: 520, s: 320, a: 0.3 }] },
+]);
