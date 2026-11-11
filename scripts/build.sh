@@ -22,7 +22,7 @@ EXP=$(echo $IDS | wc -w); [ "$(ls seg/shot_??.mp4 2>/dev/null | wc -l)" -eq "$EX
 for f in seg/shot_??.mp4; do echo "file '$PWD/$f'"; done > seg/list.txt
 ffmpeg -v error -y -f concat -safe 0 -i seg/list.txt -c copy silent.mp4
 echo "== mux"
-ffmpeg -v error -y -i silent.mp4 -i audio/mix.wav -map 0:v -map 1:a -c:v copy -af "alimiter=limit=0.8:attack=2:release=60,loudnorm=I=-14:TP=-1.5:LRA=9" -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart "$ROOT/pub/reel.mp4"
+ffmpeg -v error -y -i silent.mp4 -i audio/mix.wav -map 0:v -map 1:a -c:v libx264 -preset medium -crf 20 -maxrate 9M -bufsize 18M -pix_fmt yuv420p -r 30 -af "alimiter=limit=0.8:attack=2:release=60,loudnorm=I=-14:TP=-1.5:LRA=9" -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart "$ROOT/pub/reel.mp4"
 echo "== cover"
 CT=$(node -e "const m=require('$ROOT/job/meta.json');console.log((m.cover&&m.cover.t)||1.2)"); node "$ENG/tools/render.js" stills "$CT" >/dev/null
 node -e "
