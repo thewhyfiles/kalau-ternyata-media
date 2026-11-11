@@ -1,0 +1,131 @@
+{
+ "catatan": "Urutan = prioritas. Ambil yang status 'siap' dan belum ada selesai/<id>.txt. Semua klaim wajib diriset ulang saat dikerjakan (minimal 2 sumber); kalau klaim ternyata tidak kuat, tandai status 'batal' dan ambil topik berikutnya.",
+ "topik": [
+  {
+   "id": "columbus-bumi-datar",
+   "pilar": "kalau",
+   "hook": "Kolumbus bukan pembuktinya bumi bulat",
+   "status": "selesai"
+  },
+  {
+   "id": "napoleon-tidak-pendek",
+   "pilar": "kalau",
+   "hook": "Napoleon ternyata tidak sependek yang dikira (satuan pouce Prancis vs inci Inggris)",
+   "status": "siap"
+  },
+  {
+   "id": "tembok-besar-luar-angkasa",
+   "pilar": "kalau",
+   "hook": "Tembok Besar China ternyata tidak terlihat jelas dengan mata telanjang dari luar angkasa",
+   "status": "siap"
+  },
+  {
+   "id": "helm-viking-tanduk",
+   "pilar": "kalau",
+   "hook": "Helm Viking ternyata tidak bertanduk (citra dari kostum opera abad 19)",
+   "status": "siap"
+  },
+  {
+   "id": "einstein-matematika",
+   "pilar": "kalau",
+   "hook": "Einstein ternyata tidak gagal matematika di sekolah",
+   "status": "siap"
+  },
+  {
+   "id": "piramida-pekerja",
+   "pilar": "kalau",
+   "hook": "Pekerja piramida Giza ternyata bukan budak menurut temuan arkeologi",
+   "status": "siap"
+  },
+  {
+   "id": "gladiator-jempol",
+   "pilar": "kalau",
+   "hook": "Jempol ke bawah di arena gladiator ternyata belum tentu berarti hukuman mati",
+   "status": "siap"
+  },
+  {
+   "id": "otak-sepuluh-persen",
+   "pilar": "kata",
+   "hook": "Kata siapa manusia hanya memakai 10 persen otaknya?",
+   "status": "siap"
+  },
+  {
+   "id": "peta-lidah",
+   "pilar": "kata",
+   "hook": "Kata siapa lidah punya zona rasa terpisah (peta lidah)?",
+   "status": "siap"
+  },
+  {
+   "id": "banteng-warna-merah",
+   "pilar": "kata",
+   "hook": "Kata siapa banteng marah karena warna merah?",
+   "status": "siap"
+  },
+  {
+   "id": "marie-antoinette-brioche",
+   "pilar": "kalau",
+   "hook": "Ucapan 'biar mereka makan kue' ternyata tidak terbukti diucapkan Marie Antoinette",
+   "status": "siap"
+  },
+  {
+   "id": "petir-dua-kali",
+   "pilar": "kalau",
+   "hook": "Petir ternyata bisa menyambar tempat yang sama berkali-kali",
+   "status": "siap"
+  },
+  {
+   "id": "kelelawar-buta",
+   "pilar": "kalau",
+   "hook": "Kelelawar ternyata tidak buta",
+   "status": "siap"
+  },
+  {
+   "id": "ikan-ingatan-tiga-detik",
+   "pilar": "kalau",
+   "hook": "Ikan ternyata tidak beringatan tiga detik",
+   "status": "siap"
+  },
+  {
+   "id": "permen-karet-tujuh-tahun",
+   "pilar": "kalau",
+   "hook": "Permen karet tertelan ternyata tidak mengendap tujuh tahun",
+   "status": "siap"
+  },
+  {
+   "id": "bulan-sisi-gelap",
+   "pilar": "kalau",
+   "hook": "Sisi gelap Bulan ternyata tidak selalu gelap",
+   "status": "siap"
+  },
+  {
+   "id": "darah-biru",
+   "pilar": "kalau",
+   "hook": "Darah di dalam vena ternyata tidak pernah biru",
+   "status": "siap"
+  },
+  {
+   "id": "bunglon-kamuflase",
+   "pilar": "kalau",
+   "hook": "Bunglon ternyata mengubah warna bukan terutama untuk kamuflase",
+   "status": "siap"
+  },
+  {
+   "id": "tikus-keju",
+   "pilar": "kalau",
+   "hook": "Tikus ternyata tidak terlalu suka keju",
+   "status": "siap"
+  },
+  {
+   "id": "isi-earbud-tws",
+   "pilar": "bongkar",
+   "hook": "Bongkar isi earbud nirkabel (tunda sampai skill breakdown terpasang)",
+   "status": "tunda"
+  },
+  {
+   "id": "isi-power-bank",
+   "pilar": "bongkar",
+   "hook": "Bongkar isi power bank (tunda sampai skill breakdown terpasang)",
+   "status": "tunda"
+  }
+ ]
+}
